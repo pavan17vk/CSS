@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: gray;
+            height: 200vh;
+        }
+        .container{
+            background-color: orange;
+            padding: 30px;
+            height: 80vh;
+        
+        }
+        .card{
+            background-color: aquamarine;
+            height: 60vh;
+            padding: 20px;
+        }
+        .card-holder{
+            background-color: blue;
+        
+            height: 50vh;
+        }
+        .card-title{
+            background-color: chartreuse;
+            padding: 30px;
+            width:100px ;
+            position: absolute;
+            top: 0px;
+            left: 100px;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Position</h1>
+    <!-- relative position,absolute position,fixed position,sticky position(in order to use sticky we have to use javascript) -->
+    <!-- top,right,bottom,left(these are mandatory) -->
+    <section class="container">
+        <div class="card">
+            <div class="card-holder">
+                <div class="card-title">
+                    <h3>Sample card title</h3>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- 
+    1. position relative
+        a.only x(left) and y(top) values can be applicable
+        b.it will takes its previous container parent
+    2.position absolute
+        a.consider 4 sides to change the position
+        b.will take body as reference by default, if any parent have position relative will consider that parent as its ref.
+        c.scrolling is possible
+    3.position fixed
+        a.consider all 4 sides
+        b.will take only body as reference by default.
+        c.scrolling is not possible.
+    -->
+</body>
+</html>

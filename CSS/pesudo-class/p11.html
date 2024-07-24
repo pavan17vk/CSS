@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input{
+            padding: 10px 12px;
+            font-size: 1.2rem;
+            border: 2px solid black;
+        }
+        input:in-range{
+            background-color: green;
+            border: 2px solid;
+
+        }
+        input:out-of-range{
+            background-color: red;
+            border: 2px red;
+        }
+    </style>
+</head>
+<body>
+    <h1>:in-range and :out-of-range</h1>
+    <form action="">
+        <label for="">Enter the number</label>
+        <input type="number" name="num" id="num" min="0" max="100" value="4">
+    </form>
+</body>
+</html>

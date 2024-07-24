@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input[type="radio"]:checked {
+            border: none;
+            outline: 2px solid red;
+        }
+        input[type="checkbox"]:checked {
+            border: none;
+            outline: 2px solid red;
+        }
+        input[type="radio"]:default {
+            border: none;
+            outline: 2px solid forestgreen;
+        }
+        input[type="checkbox"]:default {
+            border: none;
+            outline: 2px solid green;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <!-- Default is related to the checked property where it sekects the checked one -->
+    <h1>:checked and :default</h1>
+    <form action="">
+        <label for="">Choose Gender</label>
+        <input type="radio" name="gender" value="male">Male</input>
+        <input type="radio" name="gender" value="female" checked>Female</input>
+        <input type="radio" name="gender" value="transgender">Transgender</input>
+
+    </form>
+    <hr>
+    <form action="">
+        <label for="">Choose language</label>
+        <input type="checkbox" name="Lang1" value="English">English</input>
+        <input type="checkbox" name="Lang2" value="Kannada" checked >Kannada</input>
+        <input type="checkbox" name="lang3" value="Telugu">Telugu</input>
+
+    </form>
+</body>
+</html>

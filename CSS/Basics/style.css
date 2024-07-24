@@ -1,0 +1,7 @@
+/* Class name always start with . dot*/
+.container{
+    background-color: cornflowerblue;
+    width: 300px;
+    padding: 20px;
+    color: red;
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input::file-selector-button{
+            padding: 10px 12px;
+            background-color: aqua;
+            color: brown;
+            border: none;
+            cursor: pointer;
+        }
+        input::placeholder{
+            color: chartreuse;
+            text-transform: capitalize;
+            letter-spacing: 3px;
+        }
+    </style>
+</head>
+<body>
+    <h1>::file-selector-button, and ::placeholder</h1>
+    <form action="">
+        <label for="">Upload File </label>
+        <input type="file" name="mypic" id="mypic" accept="image/png,imag/jpg,img/jpeg,img/webp">
+    </form>
+    <hr>
+    <label for="">Enter your name</label>
+    <input type="text" name="name" id="name" placeholder="enter name">
+</body>
+</html>

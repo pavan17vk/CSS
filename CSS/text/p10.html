@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .p1{
+            direction: ltr;
+            unicode-bidi: bidi-override;
+        }
+        .p2{
+            direction: rtl;
+            unicode-bidi: bidi-override;
+        }
+        .p3{
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+<body>
+    <h1>direction and unicode-bidi</h1>
+    <p class="p1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla error vero quam perspiciatis sapiente, repudiandae, laborum ea blanditiis soluta aliquam tempore cumque, velit fuga facere iure odit magni itaque explicabo?</p>
+    <p class="p2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, cumque minima hic nam expedita vero at dignissimos dolorem officiis ullam illum veritatis ducimus quaerat asperiores delectus tempora quasi labore facere.</p>
+    <!-- pre-wrap the spaces -->
+
+    <pre>
+        function product(a,b){
+            return a * b;
+
+        }
+        product(123,456)
+
+    </pre>
+    <hr>
+    <p class="p3">
+        function product(a,b){
+            return a * b;
+
+        }
+        product(123,456)
+
+
+    </p>
+</body>
+</html>

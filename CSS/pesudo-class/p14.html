@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        /* -n+3,position,even,odd */
+        li:nth-last-child(-n+3) {
+            border: 2px solid pink;
+            margin-top: 4px ;
+        }
+        dt{
+            font-weight: bold;
+        }
+        dd{
+            margin: 10px;
+
+        }
+        dd:nth-last-of-type(3n){
+            border: 2px solid red;
+        }
+    </style>
+</head>
+<body>
+    <h1>nth-last-child() and nth-last-of-type</h1>
+    <p>Color name</p>
+    <ol reversed>
+        <li>green</li>
+        <li>red</li>
+        <li>blue</li>
+        <li>pink</li>
+        <li>orange</li>
+        <li>white</li>
+        <li>grey</li>
+    </ol>
+    <hr>
+    <dl>
+        <dt>Vegetable</dt>
+        <dd>1.Tomoto</dd>
+        <dd>2.pomoto</dd>
+        <dd>3.fomoto</dd>
+        <dd>4.romoto</dd>
+        <dd>5.beans</dd>
+        <dd>6.Tom</dd>
+    </dl>
+</body>
+</html>

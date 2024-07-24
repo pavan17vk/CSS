@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .block{
+            background-color: rgb(213, 9, 9);
+            
+            width: 300px;
+            height:100%;
+            padding: 30px 15px 25px 20px /* top right bottom left */
+            
+        }
+        .block{
+            border-style: double;
+            border-color: blue;
+            border-width: 10px;
+            margin: 20px 15px 25px;
+        }
+    </style>
+</head>
+<body>
+    <h1>box-model</h1>
+    <!--
+    
+    width * height(based on our content it automatically allocates) (we can set manually width and height) px,%,vw(viewport width), vh(viewport height)
+    px=>fixed custom sizes
+    %=> width=100%, height=content height
+    vh/vw=>1frame size (it will take whole complete screen)
+    padding    top,right,bottom,left
+    border     all sides(width,style,color)these three are important when we use border
+    margin     top,right,bottom,left
+    these 4 are the important properties of box-model
+    box-model applies to all html element
+    -->
+    <div class="block">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi, temporibus quas! Maiores, veritatis tempore fugiat dolorem natus minima consectetur aspernatur explicabo commodi officia corporis, nulla, error placeat aliquam. Architecto, rerum!</p>
+    </div>
+</body>
+</html>
